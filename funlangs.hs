@@ -155,7 +155,7 @@ main = putStrLn . unlines
     :   "There are only languages with different functional features."
     :   ""
     :   [ unwords
-            $ "|" : "Language" : "|" : "Overall rating" : "|"
+            $ "|" : "Language" : "|" : "Score" : "|"
             : concat
                 [ [show n ++ '.' : showAbbr feature, "|"]
                 | n <- [1 :: Int ..]
@@ -164,7 +164,7 @@ main = putStrLn . unlines
         , "|---|---|" ++ concat (replicate (length features) "---|")
         ]
     ++  [ unwords
-            $ "|" : language : "|" : show (realToFrac rating :: Float) : "|"
+            $ "|" : language : "|" : show (realToFrac score :: Float) : "|"
             : do
                 f <- features
                 [   case languageFeatures !? f of
@@ -174,7 +174,7 @@ main = putStrLn . unlines
                         Just Yes    -> ":heavy_check_mark:"
                     , "|"
                     ]
-        | (rating, language, languageFeatures) <- languages'
+        | (score, language, languageFeatures) <- languages'
         ]
     ++  ""
     :   [ show n ++ ". " ++ showAbbr feature ++ ": " ++ show feature
@@ -183,9 +183,9 @@ main = putStrLn . unlines
         ]
   where
     languages' = sortOn (Down . fst3)
-        [ (rating, language, languageFeatures)
+        [ (score, language, languageFeatures)
         | (language, languageFeatures) <- languages
-        , let rating = sum $ value <$> languageFeatures
+        , let score = sum $ value <$> languageFeatures
         ]
 
 showAbbr :: Show a => a -> String
