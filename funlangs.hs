@@ -31,7 +31,7 @@ main = putStrLn . unlines
     $   [ unwords
             $ "|" : "Language" : "|" : "Overall rating" : "|"
             : concat [[show feature, "|"] | feature <- features]
-        , "|---|"
+        , "|---|---|" ++ concat (replicate (length features) "---|")
         ]
     ++  [ unwords
             $ "|" : language : "|" : show (length languageFeatures) : "|"
