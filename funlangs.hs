@@ -24,6 +24,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , ImmutableData -: No
+        , Laziness -: No
         , UpwardsFunargProblem -: No
         ]
     , "C++" -:
@@ -34,6 +35,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , ImmutableData -: Yes
+        , Laziness -: No
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
         , UpwardsFunargProblem -: Quirks
@@ -46,6 +48,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
+        , Laziness -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
         , PatternMatchingAlternatives -: Yes
@@ -70,6 +73,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
+        , Laziness -: Yes
         , ParametricPolymorphism -: Yes
         , UpwardsFunargProblem -: Yes
         ]
@@ -81,6 +85,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , ImmutableData -: Yes
+        , Laziness -: No
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
         , PatternMatchingVariableIntroduction -: Yes
@@ -94,6 +99,7 @@ languages =
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
+        , Laziness -: No
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Quirks
         , PatternMatchingAlternatives -: Yes
