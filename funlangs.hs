@@ -17,94 +17,94 @@ import           Util      (fst3)
 languages :: LanguageDesc
 languages =
     [ "C" -:
-        [ AdHocPolymorphism -: No
-        , AlgebraicDataTypes -: No
-        , Closures -: No
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: No
-        , ImmutableData -: No
-        , Laziness -: No
-        , UpwardsFunargProblem -: No
+        [ AdHocPolymorphism                     -: No
+        , AlgebraicDataTypes                    -: No
+        , Closures                              -: No
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: No
+        , ImmutableData                         -: No
+        , Laziness                              -: No
+        , UpwardsFunargProblem                  -: No
         ]
     , "C++" -:
-        [ AdHocPolymorphism -: Yes
-        , AlgebraicDataTypes -: No
-        , Closures -: Yes
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: No
-        , ImmutableData -: Yes
-        , Laziness -: No
-        , ParametricPolymorphism -: Yes
-        , PatternMatching -: Yes
-        , UpwardsFunargProblem -: Quirks
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: No
+        , Closures                              -: Yes
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: No
+        , ImmutableData                         -: Yes
+        , Laziness                              -: No
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , UpwardsFunargProblem                  -: Quirks
         ]
     , "Haskell" -:
-        [ AdHocPolymorphism -: Yes
-        , AlgebraicDataTypes -: Yes
-        , Closures -: Yes
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: Yes
-        , ImmutableData -: Yes
-        , Laziness -: Yes
-        , ParametricPolymorphism -: Yes
-        , PatternMatching -: Yes
-        , PatternMatchingAlternatives -: Yes
-        , PatternMatchingVariableIntroduction -: Yes
-        , TailCallOptimization -: Yes
-        , UpwardsFunargProblem -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: Yes
+        , Closures                              -: Yes
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: Yes
+        , ImmutableData                         -: Yes
+        , Laziness                              -: Yes
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , PatternMatchingAlternatives           -: Yes
+        , PatternMatchingVariableIntroduction   -: Yes
+        , TailCallOptimization                  -: Yes
+        , UpwardsFunargProblem                  -: Yes
         ]
     , "Idris" -:
-        [ AlgebraicDataTypes -: Yes
-        , Closures -: Yes
-        , DependentTypes -: Yes
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: Yes
-        , ImmutableData -: No
-        , UpwardsFunargProblem -: Yes
+        [ AlgebraicDataTypes                    -: Yes
+        , Closures                              -: Yes
+        , DependentTypes                        -: Yes
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: Yes
+        , ImmutableData                         -: No
+        , UpwardsFunargProblem                  -: Yes
         ]
     , "OCaml" -:
-        [ AdHocPolymorphism -: Yes
-        , AlgebraicDataTypes -: Yes
-        , Closures -: Yes
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: Yes
-        , ImmutableData -: Yes
-        , Laziness -: Yes
-        , ParametricPolymorphism -: Yes
-        , UpwardsFunargProblem -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: Yes
+        , Closures                              -: Yes
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: Yes
+        , ImmutableData                         -: Yes
+        , Laziness                              -: Yes
+        , ParametricPolymorphism                -: Yes
+        , UpwardsFunargProblem                  -: Yes
         ]
     , "Python" -:
-        [ AdHocPolymorphism -: Yes
-        , AlgebraicDataTypes -: No
-        , Closures -: Yes
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: No
-        , ImmutableData -: Yes
-        , Laziness -: No
-        , ParametricPolymorphism -: Yes
-        , PatternMatching -: Yes
-        , PatternMatchingVariableIntroduction -: Yes
-        , UpwardsFunargProblem -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: No
+        , Closures                              -: Yes
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: No
+        , ImmutableData                         -: Yes
+        , Laziness                              -: No
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , PatternMatchingVariableIntroduction   -: Yes
+        , UpwardsFunargProblem                  -: Yes
         ]
     , "Rust" -:
-        [ AdHocPolymorphism -: Yes
-        , AlgebraicDataTypes -: Yes
-        , Closures -: Quirks
-        , DependentTypes -: No
-        , DownwardsFunargProblem -: Yes
-        , ForcesImmutability -: Yes
-        , ImmutableData -: Yes
-        , Laziness -: No
-        , ParametricPolymorphism -: Yes
-        , PatternMatching -: Quirks
-        , PatternMatchingAlternatives -: Yes
-        , PatternMatchingVariableIntroduction -: Yes
-        , UpwardsFunargProblem -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: Yes
+        , Closures                              -: Quirks
+        , DependentTypes                        -: No
+        , DownwardsFunargProblem                -: Yes
+        , ForcesImmutability                    -: Yes
+        , ImmutableData                         -: Yes
+        , Laziness                              -: No
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Quirks
+        , PatternMatchingAlternatives           -: Yes
+        , PatternMatchingVariableIntroduction   -: Yes
+        , UpwardsFunargProblem                  -: Yes
         ]
     ]
 
