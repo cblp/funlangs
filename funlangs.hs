@@ -32,6 +32,7 @@ languages =
         , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
         , PatternMatchingAlternatives
+        , TailCallOptimization
         ])
     , ("OCaml",
         [ Closures
@@ -70,10 +71,19 @@ data Feature
     | ImmutableByDefault
     | ImmutableData
     | ListComprehension
+    | PatternMatchingAlternatives
     | PatternMatchingDestructuring
     | PatternMatchingVariableIntroduction
-    | PatternMatchingAlternatives
+    | TailCallOptimization
     deriving (Bounded, Enum, Eq, Ord, Show)
+
+-- TODO
+--     ADT
+--     GADT
+--     TypeFamilies
+--     Deriving
+--     Typeclasses
+--     в общем весь хаскель с расширениями
 
 features :: [Feature]
 features = [minBound ..]
