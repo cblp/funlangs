@@ -31,7 +31,6 @@ languages =
         , FunctionAsReturn
         , ImmutableByDefault
         , ImmutableData
-        , ListComprehension
         , ParametricPolymorphism
         , PatternMatchingAlternatives
         , PatternMatchingDestructuring
@@ -51,7 +50,6 @@ languages =
         , FunctionAsArgument
         , FunctionAsReturn
         , ImmutableData
-        , ListComprehension
         , ParametricPolymorphism
         , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
@@ -80,7 +78,6 @@ data Feature
     | FunctionAsReturn
     | ImmutableByDefault
     | ImmutableData
-    | ListComprehension
     | ParametricPolymorphism
     | PatternMatchingAlternatives
     | PatternMatchingDestructuring
