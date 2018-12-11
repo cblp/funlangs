@@ -63,7 +63,12 @@ features = [minBound ..]
 
 main :: IO ()
 main = putStrLn . unlines
-    $   [ unwords
+    $   "# Functional languages"
+    :   ""
+    :   "There is no such thing as functional language."
+    :   "There are only languages with defferent language features."
+    :   ""
+    :   [ unwords
             $ "|" : "Language" : "|" : "Overall rating" : "|"
             : concat
                 [ [show n ++ '.' : showAbbr feature, "|"]

@@ -1,3 +1,8 @@
+# Functional languages
+
+There is no such thing as functional language.
+There are only languages with defferent language features.
+
 | Language | Overall rating | 1.C | 2.FAA | 3.FAR | 4.IBD | 5.ID | 6.LC |
 |---|---|---|---|---|---|---|---|
 | Haskell | 6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
