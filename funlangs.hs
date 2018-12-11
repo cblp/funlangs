@@ -20,18 +20,22 @@ languages =
         , FunctionAsArgument
         , FunctionAsReturn
         , ImmutableData
+        , ParametricPolymorphism
         , PatternMatchingDestructuring
         ])
     , ("Haskell",
-        [ Closures
+        [ AdHocPolymorphism
+        , AlgebraicDataTypes
+        , Closures
         , FunctionAsArgument
         , FunctionAsReturn
         , ImmutableByDefault
         , ImmutableData
         , ListComprehension
+        , ParametricPolymorphism
+        , PatternMatchingAlternatives
         , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
-        , PatternMatchingAlternatives
         , TailCallOptimization
         ])
     , ("OCaml",
@@ -40,6 +44,7 @@ languages =
         , FunctionAsReturn
         , ImmutableByDefault
         , ImmutableData
+        , ParametricPolymorphism
         ])
     , ("Python",
         [ Closures
@@ -47,6 +52,7 @@ languages =
         , FunctionAsReturn
         , ImmutableData
         , ListComprehension
+        , ParametricPolymorphism
         , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
         ])
@@ -56,34 +62,31 @@ languages =
         , FunctionAsReturn
         , ImmutableByDefault
         , ImmutableData
+        , ParametricPolymorphism
+        , PatternMatchingAlternatives
         , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
-        , PatternMatchingAlternatives
         ])
     ]
 
 type LanguageDesc = [(String, Set Feature)]
 
 data Feature
-    = Closures
+    = AdHocPolymorphism
+    | AlgebraicDataTypes
+    | Closures
+    | DependentTypes
     | FunctionAsArgument
     | FunctionAsReturn
     | ImmutableByDefault
     | ImmutableData
     | ListComprehension
+    | ParametricPolymorphism
     | PatternMatchingAlternatives
     | PatternMatchingDestructuring
     | PatternMatchingVariableIntroduction
     | TailCallOptimization
     deriving (Bounded, Enum, Eq, Ord, Show)
-
--- TODO
---     ADT
---     GADT
---     TypeFamilies
---     Deriving
---     Typeclasses
---     в общем весь хаскель с расширениями
 
 features :: [Feature]
 features = [minBound ..]
