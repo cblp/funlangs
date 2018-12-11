@@ -20,22 +20,24 @@ languages =
         [ AdHocPolymorphism -: No
         , AlgebraicDataTypes -: No
         , Closures -: No
-        , FunctionAsValue -: Quirks
+        , DownwardsFunargProblem -: Yes
+        , UpwardsFunargProblem -: No
         ]
     , "C++" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: No
         , Closures -: Yes
-        , FunctionAsValue -: Yes
+        , DownwardsFunargProblem -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
+        , UpwardsFunargProblem -: Quirks
         ]
     , "Haskell" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
-        , FunctionAsValue -: Yes
+        , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
@@ -43,38 +45,46 @@ languages =
         , PatternMatchingAlternatives -: Yes
         , PatternMatchingVariableIntroduction -: Yes
         , TailCallOptimization -: Yes
+        , UpwardsFunargProblem -: Yes
         ]
-    , "Idris" -: [DependentTypes -: Yes]
+    , "Idris" -:
+        [ DependentTypes -: Yes
+        , DownwardsFunargProblem -: Yes
+        , UpwardsFunargProblem -: Yes
+        ]
     , "OCaml" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
-        , FunctionAsValue -: Yes
+        , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
+        , UpwardsFunargProblem -: Yes
         ]
     , "Python" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: No
         , Closures -: Yes
-        , FunctionAsValue -: Yes
+        , DownwardsFunargProblem -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
         , PatternMatchingVariableIntroduction -: Yes
+        , UpwardsFunargProblem -: Yes
         ]
     , "Rust" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Quirks
-        , FunctionAsValue -: Yes
+        , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Quirks
         , PatternMatchingAlternatives -: Yes
         , PatternMatchingVariableIntroduction -: Yes
+        , UpwardsFunargProblem -: Yes
         ]
     ]
 
@@ -85,8 +95,8 @@ data Feature
     | AlgebraicDataTypes
     | Closures
     | DependentTypes
+    | DownwardsFunargProblem
     | ForcesImmutability
-    | FunctionAsValue
     | ImmutableData
     | Laziness
     | ParametricModules
@@ -97,6 +107,7 @@ data Feature
     | PolymorphicRecursion
     | ReferentialTransparency
     | TailCallOptimization
+    | UpwardsFunargProblem
     deriving (Bounded, Enum, Eq, Ord, Show)
 
 data Value = No | Quirks | Yes
