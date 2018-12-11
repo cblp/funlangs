@@ -16,9 +16,11 @@ import           Util      (fst3)
 
 languages :: LanguageDesc
 languages =
-    [ "C" -: [FunctionAsValue -: Quirks]
+    [ "C" -:
+        [AdHocPolymorphism -: No, Closures -: No, FunctionAsValue -: Quirks]
     , "C++" -:
-        [ Closures -: Yes
+        [ AdHocPolymorphism -: Yes
+        , Closures -: Yes
         , FunctionAsValue -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
@@ -38,7 +40,8 @@ languages =
         , TailCallOptimization -: Yes
         ]
     , "OCaml" -:
-        [ AlgebraicDataTypes -: Yes
+        [ AdHocPolymorphism -: Yes
+        , AlgebraicDataTypes -: Yes
         , Closures -: Yes
         , FunctionAsValue -: Yes
         , ImmutableByDefault -: Yes
@@ -46,7 +49,8 @@ languages =
         , ParametricPolymorphism -: Yes
         ]
     , "Python" -:
-        [ Closures -: Yes
+        [ AdHocPolymorphism -: Yes
+        , Closures -: Yes
         , FunctionAsValue -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
@@ -54,7 +58,8 @@ languages =
         , PatternMatchingVariableIntroduction -: Yes
         ]
     , "Rust" -:
-        [ Closures -: Quirks
+        [ AdHocPolymorphism -: Yes
+        , Closures -: Quirks
         , FunctionAsValue -: Yes
         , ImmutableByDefault -: Yes
         , ImmutableData -: Yes
