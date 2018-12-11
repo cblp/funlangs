@@ -124,9 +124,9 @@ main = putStrLn . unlines
             : do
                 f <- features
                 [   case languageFeatures !? f of
-                        Nothing     -> ":grey_question:"
+                        Nothing     -> ""
                         Just No     -> ":x:"
-                        Just Quirks -> ":white_check_mark:"
+                        Just Quirks -> ":warning:"
                         Just Yes    -> ":heavy_check_mark:"
                     , "|"
                     ]
