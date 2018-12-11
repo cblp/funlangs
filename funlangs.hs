@@ -13,13 +13,36 @@ import           Data.Set  (Set, member)
 languages :: LanguageDesc
 languages =
     [ ("C", [FunctionAsArgument, FunctionAsReturn])
-    , ("C++", [Closures, FunctionAsArgument, FunctionAsReturn])
+    , ("C++", [Closures, FunctionAsArgument, FunctionAsReturn, ImmutableData])
     , ("Haskell",
-        [Closures, FunctionAsArgument, FunctionAsReturn, ListComprehension])
-    , ("OCaml", [Closures, FunctionAsArgument, FunctionAsReturn])
+        [ Closures
+        , FunctionAsArgument
+        , FunctionAsReturn
+        , ImmutableByDefault
+        , ImmutableData
+        , ListComprehension
+        ])
+    , ("OCaml",
+        [ Closures
+        , FunctionAsArgument
+        , FunctionAsReturn
+        , ImmutableByDefault
+        , ImmutableData
+        ])
     , ("Python",
-        [Closures, FunctionAsArgument, FunctionAsReturn, ListComprehension])
-    , ("Rust", [Closures, FunctionAsArgument, FunctionAsReturn])
+        [ Closures
+        , FunctionAsArgument
+        , FunctionAsReturn
+        , ImmutableData
+        , ListComprehension
+        ])
+    , ("Rust",
+        [ Closures
+        , FunctionAsArgument
+        , FunctionAsReturn
+        , ImmutableByDefault
+        , ImmutableData
+        ])
     ]
 
 type LanguageDesc = [(String, Set Feature)]
@@ -28,6 +51,8 @@ data Feature
     = Closures
     | FunctionAsArgument
     | FunctionAsReturn
+    | ImmutableByDefault
+    | ImmutableData
     | ListComprehension
     deriving (Bounded, Enum, Eq, Ord, Show)
 
