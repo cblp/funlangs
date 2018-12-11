@@ -113,7 +113,7 @@ main = putStrLn . unlines
         , "|---|---|" ++ concat (replicate (length features) "---|")
         ]
     ++  [ unwords
-            $ "|" : language : "|" : show rating : "|"
+            $ "|" : language : "|" : show (realToFrac rating :: Float) : "|"
             : do
                 f <- features
                 [   case languageFeatures !? f of
