@@ -36,7 +36,7 @@ languages =
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
         , FunctionAsValue -: Yes
-        , ImmutableByDefault -: Yes
+        , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
@@ -50,7 +50,7 @@ languages =
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
         , FunctionAsValue -: Yes
-        , ImmutableByDefault -: Yes
+        , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         ]
@@ -69,7 +69,7 @@ languages =
         , AlgebraicDataTypes -: Yes
         , Closures -: Quirks
         , FunctionAsValue -: Yes
-        , ImmutableByDefault -: Yes
+        , ForcesImmutability -: Yes
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Quirks
@@ -85,8 +85,8 @@ data Feature
     | AlgebraicDataTypes
     | Closures
     | DependentTypes
+    | ForcesImmutability
     | FunctionAsValue
-    | ImmutableByDefault
     | ImmutableData
     | Laziness
     | ParametricModules
