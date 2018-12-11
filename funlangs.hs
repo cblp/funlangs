@@ -6,7 +6,9 @@
     -Wredundant-constraints #-}
 {-# LANGUAGE OverloadedLists #-}
 
-import           Data.Set (Set, member)
+import           Data.List (sortOn)
+import           Data.Ord  (Down (Down))
+import           Data.Set  (Set, member)
 
 languages :: LanguageDesc
 languages =
@@ -40,12 +42,17 @@ main = putStrLn . unlines
         , "|---|---|" ++ concat (replicate (length features) "---|")
         ]
     ++  [ unwords
-            $ "|" : language : "|" : show (length languageFeatures) : "|"
+            $ "|" : language : "|" : show rating : "|"
             : do
                 f <- features
                 [if f `member` languageFeatures then yes else no, "|"]
-        | (language, languageFeatures) <- languages
+        | (rating, language, languageFeatures) <- languages'
         ]
   where
+    languages' = sortOn Down
+        [ (rating, language, languageFeatures)
+        | (language, languageFeatures) <- languages
+        , let rating = length languageFeatures
+        ]
     yes = ":heavy_check_mark:"
     no  = ":x:"
