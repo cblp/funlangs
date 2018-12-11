@@ -17,9 +17,14 @@ import           Util      (fst3)
 languages :: LanguageDesc
 languages =
     [ "C" -:
-        [AdHocPolymorphism -: No, Closures -: No, FunctionAsValue -: Quirks]
+        [ AdHocPolymorphism -: No
+        , AlgebraicDataTypes -: No
+        , Closures -: No
+        , FunctionAsValue -: Quirks
+        ]
     , "C++" -:
         [ AdHocPolymorphism -: Yes
+        , AlgebraicDataTypes -: No
         , Closures -: Yes
         , FunctionAsValue -: Yes
         , ImmutableData -: Yes
@@ -50,6 +55,7 @@ languages =
         ]
     , "Python" -:
         [ AdHocPolymorphism -: Yes
+        , AlgebraicDataTypes -: No
         , Closures -: Yes
         , FunctionAsValue -: Yes
         , ImmutableData -: Yes
@@ -59,6 +65,7 @@ languages =
         ]
     , "Rust" -:
         [ AdHocPolymorphism -: Yes
+        , AlgebraicDataTypes -: Yes
         , Closures -: Quirks
         , FunctionAsValue -: Yes
         , ImmutableByDefault -: Yes
