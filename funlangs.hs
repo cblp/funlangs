@@ -20,7 +20,7 @@ languages =
         , FunctionAsValue
         , ImmutableData
         , ParametricPolymorphism
-        , PatternMatchingDestructuring
+        , PatternMatching
         ])
     , ("Haskell",
         [ AdHocPolymorphism
@@ -30,8 +30,8 @@ languages =
         , ImmutableByDefault
         , ImmutableData
         , ParametricPolymorphism
+        , PatternMatching
         , PatternMatchingAlternatives
-        , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
         , TailCallOptimization
         ])
@@ -48,7 +48,7 @@ languages =
         , FunctionAsValue
         , ImmutableData
         , ParametricPolymorphism
-        , PatternMatchingDestructuring
+        , PatternMatching
         , PatternMatchingVariableIntroduction
         ])
     , ("Rust",
@@ -57,8 +57,8 @@ languages =
         , ImmutableByDefault
         , ImmutableData
         , ParametricPolymorphism
+        , PatternMatching
         , PatternMatchingAlternatives
-        , PatternMatchingDestructuring
         , PatternMatchingVariableIntroduction
         ])
     ]
@@ -74,8 +74,8 @@ data Feature
     | ImmutableByDefault
     | ImmutableData
     | ParametricPolymorphism
+    | PatternMatching
     | PatternMatchingAlternatives
-    | PatternMatchingDestructuring
     | PatternMatchingVariableIntroduction
     | TailCallOptimization
     deriving (Bounded, Enum, Eq, Ord, Show)
