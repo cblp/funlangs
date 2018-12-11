@@ -21,6 +21,7 @@ languages =
         , AlgebraicDataTypes -: No
         , Closures -: No
         , DownwardsFunargProblem -: Yes
+        , ForcesImmutability -: No
         , UpwardsFunargProblem -: No
         ]
     , "C++" -:
@@ -28,6 +29,7 @@ languages =
         , AlgebraicDataTypes -: No
         , Closures -: Yes
         , DownwardsFunargProblem -: Yes
+        , ForcesImmutability -: No
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
@@ -48,8 +50,11 @@ languages =
         , UpwardsFunargProblem -: Yes
         ]
     , "Idris" -:
-        [ DependentTypes -: Yes
+        [ AlgebraicDataTypes -: Yes
+        , Closures -: Yes
+        , DependentTypes -: Yes
         , DownwardsFunargProblem -: Yes
+        , ForcesImmutability -: Yes
         , UpwardsFunargProblem -: Yes
         ]
     , "OCaml" -:
@@ -67,6 +72,7 @@ languages =
         , AlgebraicDataTypes -: No
         , Closures -: Yes
         , DownwardsFunargProblem -: Yes
+        , ForcesImmutability -: No
         , ImmutableData -: Yes
         , ParametricPolymorphism -: Yes
         , PatternMatching -: Yes
