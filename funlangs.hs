@@ -12,15 +12,21 @@ languages :: LanguageDesc
 languages =
     [ ("C", [FunctionAsArgument, FunctionAsReturn])
     , ("C++", [Closures, FunctionAsArgument, FunctionAsReturn])
-    , ("Haskell", [Closures, FunctionAsArgument, FunctionAsReturn])
+    , ("Haskell",
+        [Closures, FunctionAsArgument, FunctionAsReturn, ListComprehension])
     , ("OCaml", [Closures, FunctionAsArgument, FunctionAsReturn])
-    , ("Python", [Closures, FunctionAsArgument, FunctionAsReturn])
+    , ("Python",
+        [Closures, FunctionAsArgument, FunctionAsReturn, ListComprehension])
     , ("Rust", [Closures, FunctionAsArgument, FunctionAsReturn])
     ]
 
 type LanguageDesc = [(String, Set Feature)]
 
-data Feature = Closures | FunctionAsArgument | FunctionAsReturn
+data Feature
+    = Closures
+    | FunctionAsArgument
+    | FunctionAsReturn
+    | ListComprehension
     deriving (Bounded, Enum, Eq, Ord, Show)
 
 features :: [Feature]
