@@ -15,7 +15,13 @@ import           Data.Set  (Set, member)
 languages :: LanguageDesc
 languages =
     [ ("C", [FunctionAsArgument, FunctionAsReturn])
-    , ("C++", [Closures, FunctionAsArgument, FunctionAsReturn, ImmutableData])
+    , ("C++",
+        [ Closures
+        , FunctionAsArgument
+        , FunctionAsReturn
+        , ImmutableData
+        , PatternMatchingDestructuring
+        ])
     , ("Haskell",
         [ Closures
         , FunctionAsArgument
@@ -23,6 +29,9 @@ languages =
         , ImmutableByDefault
         , ImmutableData
         , ListComprehension
+        , PatternMatchingDestructuring
+        , PatternMatchingVariableIntroduction
+        , PatternMatchingAlternatives
         ])
     , ("OCaml",
         [ Closures
@@ -37,6 +46,8 @@ languages =
         , FunctionAsReturn
         , ImmutableData
         , ListComprehension
+        , PatternMatchingDestructuring
+        , PatternMatchingVariableIntroduction
         ])
     , ("Rust",
         [ Closures
@@ -44,6 +55,9 @@ languages =
         , FunctionAsReturn
         , ImmutableByDefault
         , ImmutableData
+        , PatternMatchingDestructuring
+        , PatternMatchingVariableIntroduction
+        , PatternMatchingAlternatives
         ])
     ]
 
@@ -56,6 +70,9 @@ data Feature
     | ImmutableByDefault
     | ImmutableData
     | ListComprehension
+    | PatternMatchingDestructuring
+    | PatternMatchingVariableIntroduction
+    | PatternMatchingAlternatives
     deriving (Bounded, Enum, Eq, Ord, Show)
 
 features :: [Feature]
