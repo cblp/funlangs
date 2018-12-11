@@ -4,8 +4,10 @@
     -Wall -Wcompat -Werror
     -Wincomplete-record-updates -Wincomplete-uni-patterns
     -Wredundant-constraints #-}
-{-# LANGUAGE OverloadedLists #-}
+{-# LANGUAGE OverloadedLists  #-}
+{-# LANGUAGE ParallelListComp #-}
 
+import           Data.Char (isUpper)
 import           Data.List (sortOn)
 import           Data.Ord  (Down (Down))
 import           Data.Set  (Set, member)
@@ -63,7 +65,11 @@ main :: IO ()
 main = putStrLn . unlines
     $   [ unwords
             $ "|" : "Language" : "|" : "Overall rating" : "|"
-            : concat [[show feature, "|"] | feature <- features]
+            : concat
+                [ [show n ++ '.' : showAbbr feature, "|"]
+                | n <- [1 :: Int ..]
+                | feature <- features
+                ]
         , "|---|---|" ++ concat (replicate (length features) "---|")
         ]
     ++  [ unwords
@@ -73,6 +79,11 @@ main = putStrLn . unlines
                 [if f `member` languageFeatures then yes else no, "|"]
         | (rating, language, languageFeatures) <- languages'
         ]
+    ++  ""
+    :   [ show n ++ ". " ++ showAbbr feature ++ ": " ++ show feature
+        | n <- [1 :: Int ..]
+        | feature <- features
+        ]
   where
     languages' = sortOn Down
         [ (rating, language, languageFeatures)
@@ -81,3 +92,6 @@ main = putStrLn . unlines
         ]
     yes = ":heavy_check_mark:"
     no  = ":x:"
+
+showAbbr :: Show a => a -> String
+showAbbr = filter isUpper . show
