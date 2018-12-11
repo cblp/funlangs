@@ -14,11 +14,10 @@ import           Data.Set  (Set, member)
 
 languages :: LanguageDesc
 languages =
-    [ ("C", [FunctionAsArgument, FunctionAsReturn])
+    [ ("C", [FunctionAsValue])
     , ("C++",
         [ Closures
-        , FunctionAsArgument
-        , FunctionAsReturn
+        , FunctionAsValue
         , ImmutableData
         , ParametricPolymorphism
         , PatternMatchingDestructuring
@@ -27,8 +26,7 @@ languages =
         [ AdHocPolymorphism
         , AlgebraicDataTypes
         , Closures
-        , FunctionAsArgument
-        , FunctionAsReturn
+        , FunctionAsValue
         , ImmutableByDefault
         , ImmutableData
         , ParametricPolymorphism
@@ -39,16 +37,14 @@ languages =
         ])
     , ("OCaml",
         [ Closures
-        , FunctionAsArgument
-        , FunctionAsReturn
+        , FunctionAsValue
         , ImmutableByDefault
         , ImmutableData
         , ParametricPolymorphism
         ])
     , ("Python",
         [ Closures
-        , FunctionAsArgument
-        , FunctionAsReturn
+        , FunctionAsValue
         , ImmutableData
         , ParametricPolymorphism
         , PatternMatchingDestructuring
@@ -56,8 +52,7 @@ languages =
         ])
     , ("Rust",
         [ Closures
-        , FunctionAsArgument
-        , FunctionAsReturn
+        , FunctionAsValue
         , ImmutableByDefault
         , ImmutableData
         , ParametricPolymorphism
@@ -74,8 +69,7 @@ data Feature
     | AlgebraicDataTypes
     | Closures
     | DependentTypes
-    | FunctionAsArgument
-    | FunctionAsReturn
+    | FunctionAsValue
     | ImmutableByDefault
     | ImmutableData
     | ParametricPolymorphism
