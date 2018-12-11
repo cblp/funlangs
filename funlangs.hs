@@ -88,7 +88,7 @@ main = putStrLn . unlines
     $   "# Functional languages"
     :   ""
     :   "There is no such thing as functional language."
-    :   "There are only languages with defferent language features."
+    :   "There are only languages with different functional features."
     :   ""
     :   [ unwords
             $ "|" : "Language" : "|" : "Overall rating" : "|"
