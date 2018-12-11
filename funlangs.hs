@@ -44,6 +44,7 @@ languages =
         , PatternMatchingVariableIntroduction -: Yes
         , TailCallOptimization -: Yes
         ]
+    , "Idris" -: [DependentTypes -: Yes]
     , "OCaml" -:
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes

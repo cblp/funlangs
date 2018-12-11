@@ -10,6 +10,7 @@ There are only languages with different functional features.
 | OCaml | 7.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: |  |  |  |  |  |  |
 | Python | 7.0 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |
 | C++ | 6.0 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |
+| Idris | 1.0 |  |  |  | :heavy_check_mark: |  |  |  |  |  |  |  |  |  |  |  |  |
 | C | 0.5 | :x: | :x: | :x: |  | :warning: |  |  |  |  |  |  |  |  |  |  |  |
 
 1. AHP: AdHocPolymorphism
