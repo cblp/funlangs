@@ -25,6 +25,7 @@ languages =
         , ForcesImmutability                    -: No
         , ImmutableData                         -: No
         , Laziness                              -: No
+        , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
     , "C++" -:
@@ -38,6 +39,7 @@ languages =
         , Laziness                              -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
+        , PureFunctions                         -: Quirks
         , UpwardsFunargProblem                  -: Quirks
         ]
     , "Haskell" -:
@@ -53,6 +55,7 @@ languages =
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -75,6 +78,7 @@ languages =
         , ImmutableData                         -: Yes
         , Laziness                              -: Yes
         , ParametricPolymorphism                -: Yes
+        , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
     , "Python" -:
@@ -89,6 +93,7 @@ languages =
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
     , "Rust" -:
@@ -104,6 +109,7 @@ languages =
         , PatternMatching                       -: Quirks
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
     ]
@@ -125,6 +131,7 @@ data Feature
     | PatternMatchingAlternatives
     | PatternMatchingVariableIntroduction
     | PolymorphicRecursion
+    | PureFunctions
     | ReferentialTransparency
     | TailCallOptimization
     | UpwardsFunargProblem

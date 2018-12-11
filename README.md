@@ -3,15 +3,15 @@
 There is no such thing as a functional language.
 There are only languages with different functional features.
 
-| Language | Overall rating | 1.AHP | 2.ADT | 3.C | 4.DT | 5.DFP | 6.FI | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.RT | 16.TCO | 17.UFP |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Haskell | 13.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |
-| Rust | 10.0 | :heavy_check_mark: | :heavy_check_mark: | :warning: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: |
-| OCaml | 9.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |  |  |  | :heavy_check_mark: |
-| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  | :heavy_check_mark: |
-| C++ | 6.5 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  | :warning: |
-| Idris | 6.0 |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |  |  |  |  |  | :heavy_check_mark: |
-| C | 1.0 | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |  |  |  |  |  |  |  | :x: |
+| Language | Overall rating | 1.AHP | 2.ADT | 3.C | 4.DT | 5.DFP | 6.FI | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.PF | 16.RT | 17.TCO | 18.UFP |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Haskell | 14.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
+| Rust | 10.0 | :heavy_check_mark: | :heavy_check_mark: | :warning: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
+| OCaml | 9.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |  | :x: |  |  | :heavy_check_mark: |
+| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
+| C++ | 7.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :warning: |  |  | :warning: |
+| Idris | 6.0 |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |  |  |  |  |  |  | :heavy_check_mark: |
+| C | 1.0 | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |  |  |  |  |  | :x: |  |  | :x: |
 
 1. AHP: AdHocPolymorphism
 2. ADT: AlgebraicDataTypes
@@ -27,7 +27,8 @@ There are only languages with different functional features.
 12. PMA: PatternMatchingAlternatives
 13. PMVI: PatternMatchingVariableIntroduction
 14. PR: PolymorphicRecursion
-15. RT: ReferentialTransparency
-16. TCO: TailCallOptimization
-17. UFP: UpwardsFunargProblem
+15. PF: PureFunctions
+16. RT: ReferentialTransparency
+17. TCO: TailCallOptimization
+18. UFP: UpwardsFunargProblem
 
