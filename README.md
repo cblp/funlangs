@@ -8,10 +8,10 @@ There are only languages with different functional features.
 | Haskell | 12.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |
 | Rust | 10.0 | :heavy_check_mark: | :heavy_check_mark: | :warning: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: |
 | OCaml | 8.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: |  |  |  |  |  |  | :heavy_check_mark: |
-| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  | :heavy_check_mark: |
-| C++ | 6.5 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  | :warning: |
-| Idris | 3.0 |  |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |  |  |  |  |  | :heavy_check_mark: |
-| C | 1.0 | :x: | :x: | :x: |  | :heavy_check_mark: |  |  |  |  |  |  |  |  |  |  |  | :x: |
+| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  | :heavy_check_mark: |
+| C++ | 6.5 | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  | :warning: |
+| Idris | 6.0 |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |  |  |  |  | :heavy_check_mark: |
+| C | 1.0 | :x: | :x: | :x: |  | :heavy_check_mark: | :x: |  |  |  |  |  |  |  |  |  |  | :x: |
 
 1. AHP: AdHocPolymorphism
 2. ADT: AlgebraicDataTypes
