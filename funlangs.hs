@@ -36,7 +36,8 @@ languages =
         , TailCallOptimization
         ])
     , ("OCaml",
-        [ Closures
+        [ AlgebraicDataTypes
+        , Closures
         , FunctionAsValue
         , ImmutableByDefault
         , ImmutableData
