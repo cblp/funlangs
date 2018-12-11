@@ -25,6 +25,7 @@ languages =
         , ForcesImmutability                    -: No
         , ImmutableData                         -: No
         , Laziness                              -: No
+        , ParametricModules                     -: No
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
@@ -37,6 +38,7 @@ languages =
         , ForcesImmutability                    -: No
         , ImmutableData                         -: Yes
         , Laziness                              -: No
+        , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
         , PureFunctions                         -: Quirks
@@ -51,6 +53,7 @@ languages =
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
         , Laziness                              -: Yes
+        , ParametricModules                     -: Quirks
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: Yes
@@ -90,6 +93,7 @@ languages =
         , ForcesImmutability                    -: No
         , ImmutableData                         -: Yes
         , Laziness                              -: No
+        , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
@@ -105,6 +109,7 @@ languages =
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
         , Laziness                              -: No
+        , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
         , PatternMatchingAlternatives           -: Yes

@@ -5,13 +5,13 @@ There are only languages with different functional features.
 
 | Language | Overall rating | 1.AHP | 2.ADT | 3.C | 4.DT | 5.DFP | 6.FI | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.PF | 16.RT | 17.TCO | 18.UFP |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Haskell | 14.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
-| Rust | 10.0 | :heavy_check_mark: | :heavy_check_mark: | :warning: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
+| Haskell | 14.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
+| Rust | 10.0 | :heavy_check_mark: | :heavy_check_mark: | :warning: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
 | OCaml | 9.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |  | :x: |  |  | :heavy_check_mark: |
-| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
-| C++ | 7.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :warning: |  |  | :warning: |
+| Python | 8.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :x: |  |  | :heavy_check_mark: |
+| C++ | 7.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :warning: |  |  | :warning: |
 | Idris | 6.0 |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |  |  |  |  |  |  | :heavy_check_mark: |
-| C | 1.0 | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |  |  |  |  |  | :x: |  |  | :x: |
+| C | 1.0 | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: |  |  |  |  |  | :x: |  |  | :x: |
 
 1. AHP: AdHocPolymorphism
 2. ADT: AlgebraicDataTypes
