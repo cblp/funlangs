@@ -73,10 +73,14 @@ data Feature
     | FunctionAsValue
     | ImmutableByDefault
     | ImmutableData
+    | Laziness
+    | ParametricModules
     | ParametricPolymorphism
     | PatternMatching
     | PatternMatchingAlternatives
     | PatternMatchingVariableIntroduction
+    | PolymorphicRecursion
+    | ReferentialTransparency
     | TailCallOptimization
     deriving (Bounded, Enum, Eq, Ord, Show)
 
