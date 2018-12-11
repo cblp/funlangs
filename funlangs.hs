@@ -20,6 +20,7 @@ languages =
         [ AdHocPolymorphism -: No
         , AlgebraicDataTypes -: No
         , Closures -: No
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , UpwardsFunargProblem -: No
@@ -28,6 +29,7 @@ languages =
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: No
         , Closures -: Yes
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , ImmutableData -: Yes
@@ -39,6 +41,7 @@ languages =
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
@@ -61,6 +64,7 @@ languages =
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Yes
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
@@ -71,6 +75,7 @@ languages =
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: No
         , Closures -: Yes
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
         , ImmutableData -: Yes
@@ -83,6 +88,7 @@ languages =
         [ AdHocPolymorphism -: Yes
         , AlgebraicDataTypes -: Yes
         , Closures -: Quirks
+        , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
         , ImmutableData -: Yes
