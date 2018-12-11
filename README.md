@@ -5,12 +5,12 @@ There are only languages with different functional features.
 
 | Language | Overall rating | 1.AHP | 2.ADT | 3.C | 4.DT | 5.FAV | 6.IBD | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.RT | 16.TCO |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Haskell | 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: |
-| Rust | 8 | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| Python | 6 | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
-| OCaml | 6 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: |
-| C++ | 5 | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
-| C | 1 | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :x: | :x: | :x: | :x: | :x: | :x: |
+| Haskell | 11 % 1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: |
+| Rust | 7 % 1 | :grey_question: | :grey_question: | :white_check_mark: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: | :white_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :grey_question: |
+| OCaml | 6 % 1 | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: |
+| Python | 6 % 1 | :grey_question: | :grey_question: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :grey_question: | :grey_question: | :grey_question: |
+| C++ | 5 % 1 | :grey_question: | :grey_question: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :grey_question: | :heavy_check_mark: | :grey_question: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: |
+| C | 1 % 2 | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :white_check_mark: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: |
 
 1. AHP: AdHocPolymorphism
 2. ADT: AlgebraicDataTypes
