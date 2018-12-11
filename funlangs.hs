@@ -87,7 +87,7 @@ main :: IO ()
 main = putStrLn . unlines
     $   "# Functional languages"
     :   ""
-    :   "There is no such thing as functional language."
+    :   "There is no such thing as a functional language."
     :   "There are only languages with different functional features."
     :   ""
     :   [ unwords

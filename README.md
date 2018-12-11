@@ -1,6 +1,6 @@
 # Functional languages
 
-There is no such thing as functional language.
+There is no such thing as a functional language.
 There are only languages with different functional features.
 
 | Language | Overall rating | 1.AHP | 2.ADT | 3.C | 4.DT | 5.FAV | 6.IBD | 7.ID | 8.PP | 9.PM | 10.PMA | 11.PMVI | 12.TCO |
