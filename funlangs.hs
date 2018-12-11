@@ -23,6 +23,7 @@ languages =
         , DependentTypes -: No
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: No
+        , ImmutableData -: No
         , UpwardsFunargProblem -: No
         ]
     , "C++" -:
@@ -58,6 +59,7 @@ languages =
         , DependentTypes -: Yes
         , DownwardsFunargProblem -: Yes
         , ForcesImmutability -: Yes
+        , ImmutableData -: No
         , UpwardsFunargProblem -: Yes
         ]
     , "OCaml" -:
