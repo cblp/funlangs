@@ -3,7 +3,7 @@
 There is no such thing as a functional language.
 There are only languages with different functional features.
 
-| Language | Score | 1.AHP | 2.ADT | 3.C | 4.DT | 5.DFP | 6.FI | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.PF | 16.RT | 17.TCO | 18.UFP | 19.TC | 20. UP | 21. UT |
+| Language | Score | 1.AHP | 2.ADT | 3.C | 4.DT | 5.DFP | 6.FI | 7.ID | 8.L | 9.PM | 10.PP | 11.PM | 12.PMA | 13.PMVI | 14.PR | 15.PF | 16.RT | 17.TCO | 18.UFP | 19.TC | 20.UP | 21.UT |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Idris | 18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Haskell | 14.5 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
