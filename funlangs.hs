@@ -55,7 +55,7 @@ languages =
         , Laziness                              -: No
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
-        , PatternMatching                       -: Yes
+        , PatternMatching                       -: Quirks
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -155,7 +155,7 @@ languages =
         , Laziness                              -: No
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
-        , PatternMatching                       -: Yes
+        , PatternMatching                       -: Quirks
         , PatternMatchingVariableIntroduction   -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No

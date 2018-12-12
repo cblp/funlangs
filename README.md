@@ -31,7 +31,7 @@ There are only languages with different functional features.
 | Laziness |  | :x: | :x: | :heavy_check_mark: | :x: |  | :x: | :x: | :x: |  |
 | Parametric Modules |  | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: |  |
 | Parametric Polymorphism |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Pattern Matching |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :warning: |  |
+| Pattern Matching |  |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: |  |
 | Pattern Matching Alternatives |  |  |  | :heavy_check_mark: | :x: |  |  |  | :heavy_check_mark: |  |
 | Pattern Matching Variable Introduction |  |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
 | Referential Transparency |  |  |  |  | :heavy_check_mark: |  |  |  |  |  |
