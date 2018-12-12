@@ -11,6 +11,7 @@ languages =
     [ "C" -: Desc
         [ Closures                              -: No
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
@@ -28,6 +29,7 @@ languages =
     , "C++" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: Quirks
         , UpwardsFunargProblem                  -: Quirks
         ]
@@ -47,6 +49,7 @@ languages =
     , "Haskell" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
@@ -69,6 +72,7 @@ languages =
     , "Idris" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: No
@@ -93,6 +97,7 @@ languages =
     , "OCaml" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -110,6 +115,7 @@ languages =
     , "Python" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -130,6 +136,7 @@ languages =
     , "Rust" -: Desc
         [ Closures                              -: Quirks
         , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -158,6 +165,7 @@ data Desc = Desc
 data FunctionalFeature
     = Closures
     | DownwardsFunargProblem
+    | Functions
     | PolymorphicRecursion
     | PureFunctions
     | TailCallOptimization

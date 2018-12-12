@@ -12,6 +12,7 @@ There are only languages with different functional features.
 |---|---|---|---|---|---|---|---|
 | Closures | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: |
 | DownwardsFunargProblem | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Functions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | PolymorphicRecursion |  |  |  | :heavy_check_mark: |  |  |  |
 | PureFunctions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
 | TailCallOptimization |  |  | :heavy_check_mark: | :x: |  |  |  |
@@ -44,11 +45,11 @@ a badly implemented counts as 0.5.
 
 | Language | Score |
 |----------|-------|
-| Idris | 5.0 |
-| Haskell | 5.0 |
-| Python | 3.0 |
-| OCaml | 3.0 |
-| C++ | 3.0 |
-| Rust | 2.5 |
-| C | 1.0 |
+| Idris | 6.0 |
+| Haskell | 6.0 |
+| Python | 4.0 |
+| OCaml | 4.0 |
+| C++ | 4.0 |
+| Rust | 3.5 |
+| C | 2.0 |
 
