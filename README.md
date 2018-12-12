@@ -33,6 +33,9 @@ There are only languages with different functional features.
 | PatternMatchingAlternatives |  |  | :heavy_check_mark: | :x: |  |  | :heavy_check_mark: |
 | PatternMatchingVariableIntroduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
 | ReferentialTransparency |  |  |  | :heavy_check_mark: |  |  |  |
+| TotalityChecking | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
+| UniquenessTypes | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: |
+| UniversePolymorphism | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
 
 ## Scores
 

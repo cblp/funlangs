@@ -21,6 +21,9 @@ languages =
         , ImmutableData                         -: No
         , Laziness                              -: No
         , ParametricModules                     -: No
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     , "C++" -: Desc
         [ Closures                              -: Yes
@@ -37,6 +40,9 @@ languages =
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     , "Haskell" -: Desc
         [ Closures                              -: Yes
@@ -56,6 +62,9 @@ languages =
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     , "Idris" -: Desc
         [ Closures                              -: Yes
@@ -77,6 +86,9 @@ languages =
         , PatternMatchingAlternatives           -: No
         , PatternMatchingVariableIntroduction   -: Yes
         , ReferentialTransparency               -: Yes
+        , TotalityChecking                      -: Yes
+        , UniquenessTypes                       -: Yes
+        , UniversePolymorphism                  -: Yes
         ]
     , "OCaml" -: Desc
         [ Closures                              -: Yes
@@ -91,6 +103,9 @@ languages =
         , ImmutableData                         -: Yes
         , Laziness                              -: Yes
         , ParametricPolymorphism                -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     , "Python" -: Desc
         [ Closures                              -: Yes
@@ -108,6 +123,9 @@ languages =
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     , "Rust" -: Desc
         [ Closures                              -: Quirks
@@ -126,6 +144,9 @@ languages =
         , PatternMatching                       -: Quirks
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: Yes
+        , UniversePolymorphism                  -: No
         ]
     ]
 
@@ -156,6 +177,9 @@ data NonFunctionalFeature
     | PatternMatchingAlternatives
     | PatternMatchingVariableIntroduction
     | ReferentialTransparency
+    | TotalityChecking
+    | UniquenessTypes
+    | UniversePolymorphism
     deriving (Bounded, Enum, Eq, Ord, Show)
 
 data Value = No | Quirks | Yes
