@@ -165,6 +165,14 @@ languages =
         , UniquenessTypes                       -: Yes
         , UniversePolymorphism                  -: No
         ]
+    , "Scala" -: Desc
+        [ Closures                              -: Yes
+        , DownwardsFunargProblem                -: Yes
+        , Functions                             -: Yes
+        , PureFunctions                         -: No
+        , UpwardsFunargProblem                  -: No
+        ]
+        []
     ]
 
 data Desc = Desc
