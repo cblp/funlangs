@@ -2,6 +2,7 @@
 {-# LANGUAGE NamedFieldPuns  #-}
 {-# LANGUAGE OverloadedLists #-}
 
+import           Data.Char (isUpper)
 import           Data.List (intercalate, sortOn)
 import           Data.Map  (Map, assocs, elems, keys, (!?))
 import           Data.Ord  (Down (Down))
@@ -239,7 +240,7 @@ main = putStrLn . unlines
     :   row ("Feature" : keys languages)
     :   ("|---|" ++ concat (replicate (length languages) "---|"))
     :   [ row
-            $   show feature
+            $   wordsSpace (show feature)
             :   [ maybe "" show $ functional languageFeatures !? feature
                 | languageFeatures <- elems languages
                 ]
@@ -251,7 +252,7 @@ main = putStrLn . unlines
     :   row ("Feature" : keys languages)
     :   ("|---|" ++ concat (replicate (length languages) "---|"))
     :   [ row
-            $   show feature
+            $   wordsSpace (show feature)
             :   [ maybe "" show $ nonFunctional languageFeatures !? feature
                 | languageFeatures <- elems languages
                 ]
@@ -287,3 +288,14 @@ row = ("| " ++) . (++ " |") . intercalate " | "
 
 universe :: (Bounded a, Enum a) => [a]
 universe = [minBound .. maxBound]
+
+wordsSpace :: String -> String
+wordsSpace = unwords . splitCamel
+
+splitCamel :: String -> [String]
+splitCamel = snd . foldr go (False, []) where
+    go c (False, rest) = (isUpper c, pushHead c rest)
+    go c (True,  rest) = (isUpper c, [c] : rest)
+    -- go c (nextIsUpper, rest) = (isUpper c, if )
+    pushHead c []     = [[c]]
+    pushHead c (x:xs) = (c:x):xs
