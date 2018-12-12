@@ -201,6 +201,9 @@ main = putStrLn . unlines
     ++  ""
     :   "## Scores"
     :   ""
+    :   "A well implemented feature counts as 1,"
+    :   "a badly implemented counts as 0.5."
+    :   ""
     :   "| Language | Score |"
     :   "|----------|-------|"
     :   [ row [language, show (realToFrac score :: Float)]

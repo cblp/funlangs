@@ -36,6 +36,9 @@ There are only languages with different functional features.
 
 ## Scores
 
+A well implemented feature counts as 1,
+a badly implemented counts as 0.5.
+
 | Language | Score |
 |----------|-------|
 | Idris | 5.0 |
