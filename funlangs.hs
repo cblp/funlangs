@@ -74,12 +74,12 @@ languages =
         , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
-        , PatternMatchingAlternatives           -: Yes
+        , PatternMatchingAlternatives           -: No
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , ReferentialTransparency               -: Yes
-        , TailCallOptimization                  -: Yes
+        , TailCallOptimization                  -: No
         , UpwardsFunargProblem                  -: Yes
         ]
     , "OCaml" -:
