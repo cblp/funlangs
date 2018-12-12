@@ -133,7 +133,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
-        , Laziness                              -: Yes
+        , Laziness                              -: No
         , ParametricPolymorphism                -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No

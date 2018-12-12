@@ -28,7 +28,7 @@ There are only languages with different functional features.
 | Dependent Types |  | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
 | Forces Immutability |  | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
 | Immutable Data |  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Laziness |  | :x: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :x: | :x: |  |
+| Laziness |  | :x: | :x: | :heavy_check_mark: | :x: |  | :x: | :x: | :x: |  |
 | Parametric Modules |  | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: |  |
 | Parametric Polymorphism |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
 | Pattern Matching |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :warning: |  |
