@@ -8,35 +8,35 @@ There are only languages with different functional features.
 
 ## Functional features
 
-| Feature | Assembler | C | C++ | Haskell | Idris | OCaml | Python | Rust | Scala |
-|---|---|---|---|---|---|---|---|---|---|
-| Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
-| DownwardsFunargProblem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| PolymorphicRecursion | :x: |  |  |  | :heavy_check_mark: |  |  |  |  |
-| PureFunctions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: |
-| TailCallOptimization | :x: |  |  | :heavy_check_mark: | :x: |  |  |  |  |
-| UpwardsFunargProblem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| Feature | Assembler | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
+| DownwardsFunargProblem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| PolymorphicRecursion | :x: |  |  |  | :heavy_check_mark: |  |  |  |  |  |
+| PureFunctions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
+| TailCallOptimization | :x: |  |  | :heavy_check_mark: | :x: | :x: |  |  |  |  |
+| UpwardsFunargProblem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Non-functional features
 
-| Feature | Assembler | C | C++ | Haskell | Idris | OCaml | Python | Rust | Scala |
-|---|---|---|---|---|---|---|---|---|---|
-| AdHocPolymorphism |  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| AlgebraicDataTypes |  | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
-| DependentTypes |  | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |
-| ForcesImmutability |  | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
-| ImmutableData |  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Laziness |  | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |  |
-| ParametricModules |  | :x: | :x: | :warning: | :heavy_check_mark: |  | :x: | :x: |  |
-| ParametricPolymorphism |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| PatternMatching |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :warning: |  |
-| PatternMatchingAlternatives |  |  |  | :heavy_check_mark: | :x: |  |  | :heavy_check_mark: |  |
-| PatternMatchingVariableIntroduction |  |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |  |
-| ReferentialTransparency |  |  |  |  | :heavy_check_mark: |  |  |  |  |
-| TotalityChecking |  | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |
-| UniquenessTypes |  | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: |  |
-| UniversePolymorphism |  | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |  |
+| Feature | Assembler | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
+|---|---|---|---|---|---|---|---|---|---|---|
+| AdHocPolymorphism |  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
+| AlgebraicDataTypes |  | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
+| DependentTypes |  | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
+| ForcesImmutability |  | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
+| ImmutableData |  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
+| Laziness |  | :x: | :x: | :heavy_check_mark: | :x: |  | :heavy_check_mark: | :x: | :x: |  |
+| ParametricModules |  | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: |  |
+| ParametricPolymorphism |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
+| PatternMatching |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :warning: |  |
+| PatternMatchingAlternatives |  |  |  | :heavy_check_mark: | :x: |  |  |  | :heavy_check_mark: |  |
+| PatternMatchingVariableIntroduction |  |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
+| ReferentialTransparency |  |  |  |  | :heavy_check_mark: |  |  |  |  |  |
+| TotalityChecking |  | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
+| UniquenessTypes |  | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: |  |
+| UniversePolymorphism |  | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
 
 ## Scores
 
@@ -47,11 +47,12 @@ a badly implemented counts as 0.5.
 |----------|-------|
 | Idris | 6.0 |
 | Haskell | 6.0 |
+| Scala | 4.0 |
 | Python | 4.0 |
 | OCaml | 4.0 |
 | C++ | 4.0 |
 | Rust | 3.5 |
-| Scala | 3.0 |
 | C | 2.0 |
+| Java | 1.0 |
 | Assembler | 0.0 |
 

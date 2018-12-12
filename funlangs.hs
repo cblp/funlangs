@@ -104,6 +104,12 @@ languages =
         , UniquenessTypes                       -: Yes
         , UniversePolymorphism                  -: Yes
         ]
+    , "Java" -: Desc
+        [ Functions                             -: Yes
+        , PureFunctions                         -: No
+        , TailCallOptimization                  -: No
+        ]
+        []
     , "OCaml" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
@@ -170,7 +176,7 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , PureFunctions                         -: No
-        , UpwardsFunargProblem                  -: No
+        , UpwardsFunargProblem                  -: Yes
         ]
         []
     ]
