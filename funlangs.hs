@@ -8,7 +8,17 @@ import           Data.Ord  (Down (Down))
 
 languages :: Map String Desc
 languages =
-    [ "C" -: Desc
+    [ "Assembler" -: Desc
+        [ Closures                              -: No
+        , DownwardsFunargProblem                -: No
+        , Functions                             -: No
+        , PolymorphicRecursion                  -: No
+        , PureFunctions                         -: No
+        , TailCallOptimization                  -: No
+        , UpwardsFunargProblem                  -: No
+        ]
+        []
+    , "C" -: Desc
         [ Closures                              -: No
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
