@@ -13,6 +13,7 @@ There are only languages with different functional features.
 | Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
 | Downwards Funarg Problem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Lambda Abstraction Syntax | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
 | Polymorphic Recursion | :x: |  |  |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |
 | Pure Functions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
 | Tail Call Optimization | :x: |  |  | :heavy_check_mark: | :x: | :x: |  |  |  |  |
@@ -45,14 +46,14 @@ a badly implemented counts as 0.5.
 
 | Language | Score |
 |----------|-------|
-| Idris | 6.0 |
-| Haskell | 6.0 |
-| OCaml | 5.0 |
-| Scala | 4.0 |
-| Python | 4.0 |
-| C++ | 4.0 |
-| Rust | 3.5 |
-| Java | 3.0 |
+| Idris | 7.0 |
+| Haskell | 7.0 |
+| OCaml | 6.0 |
+| Scala | 5.0 |
+| C++ | 5.0 |
+| Rust | 4.5 |
+| Python | 4.5 |
+| Java | 4.0 |
 | C | 2.0 |
 | Assembler | 0.0 |
 

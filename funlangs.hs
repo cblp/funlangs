@@ -13,6 +13,7 @@ languages =
         [ Closures                              -: No
         , DownwardsFunargProblem                -: No
         , Functions                             -: No
+        , LambdaAbstractionSyntax               -: No
         , PolymorphicRecursion                  -: No
         , PureFunctions                         -: No
         , TailCallOptimization                  -: No
@@ -23,6 +24,7 @@ languages =
         [ Closures                              -: No
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: No
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
@@ -41,6 +43,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: Quirks
         , UpwardsFunargProblem                  -: Quirks
         ]
@@ -61,6 +64,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
@@ -84,6 +88,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: No
@@ -108,6 +113,7 @@ languages =
     , "Java" -: Desc
         [ DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
         , TailCallOptimization                  -: No
         , UpwardsFunargProblem                  -: Yes
@@ -117,6 +123,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
@@ -136,6 +143,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Quirks
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -157,6 +165,7 @@ languages =
         [ Closures                              -: Quirks
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -179,6 +188,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -194,6 +204,7 @@ data FunctionalFeature
     = Closures
     | DownwardsFunargProblem
     | Functions
+    | LambdaAbstractionSyntax
     | PolymorphicRecursion
     | PureFunctions
     | TailCallOptimization
