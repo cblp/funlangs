@@ -63,12 +63,23 @@ languages =
         , UpwardsFunargProblem                  -: Yes
         ]
     , "Idris" -:
-        [ AlgebraicDataTypes                    -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: Yes
         , Closures                              -: Yes
         , DependentTypes                        -: Yes
         , DownwardsFunargProblem                -: Yes
         , ForcesImmutability                    -: Yes
-        , ImmutableData                         -: No
+        , ImmutableData                         -: Yes
+        , Laziness                              -: No
+        , ParametricModules                     -: Yes
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , PatternMatchingAlternatives           -: Yes
+        , PatternMatchingVariableIntroduction   -: Yes
+        , PolymorphicRecursion                  -: Yes
+        , PureFunctions                         -: Yes
+        , ReferentialTransparency               -: Yes
+        , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
         ]
     , "OCaml" -:
