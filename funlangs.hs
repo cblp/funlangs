@@ -7,10 +7,9 @@
 {-# LANGUAGE LambdaCase      #-}
 {-# LANGUAGE OverloadedLists #-}
 
-import           Data.List (sortOn)
-import           Data.Map (Map, assocs, elems, keys, (!?))
+import           Data.List (intercalate, sortOn)
+import           Data.Map  (Map, assocs, elems, keys, (!?))
 import           Data.Ord  (Down (Down))
--- import           Util      (fst3)
 
 languages :: Map String LanguageDesc
 languages =
@@ -173,25 +172,20 @@ main = putStrLn . unlines
     :   ""
     :   "## Functional features"
     :   ""
-    :   [ unwords
-            $ "|" : "Feature" : "|"
-            : do
-                language <- keys languages
-                [language, "|"]
-        , "|---|" ++ concat (replicate (length languages) "---|")
-        ]
-    ++  [ unwords
-            $ "|" : show feature : "|"
-            : do
-                languageFeatures <- elems languages
-                [maybe "" show $ languageFeatures !? feature, "|"]
+    :   row ("Feature" : keys languages)
+    :   ("|---|" ++ concat (replicate (length languages) "---|"))
+    :   [ row
+            $   show feature
+            :   [ maybe "" show $ languageFeatures !? feature
+                | languageFeatures <- elems languages
+                ]
         | feature <- features
         ]
     ++  "## Scores"
     :   ""
     :   "| Language | Score |"
     :   "|----------|-------|"
-    :   [ unwords ["|", language, "|", show (realToFrac score :: Float), "|"]
+    :   [ row [language, show (realToFrac score :: Float)]
         | (score, language) <- sortOn Down
             [ (score, language)
             | (language, languageFeatures) <- assocs languages
@@ -207,3 +201,6 @@ value = \case
 
 (-:) :: a -> b -> (a, b)
 (-:) = (,)
+
+row :: [String] -> String
+row = ("| " ++) . (++ " |") . intercalate " | "
