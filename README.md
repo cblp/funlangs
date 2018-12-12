@@ -11,12 +11,12 @@ There are only languages with different functional features.
 | Feature | Assembler | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
-| DownwardsFunargProblem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| DownwardsFunargProblem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | PolymorphicRecursion | :x: |  |  |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |
 | PureFunctions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
 | TailCallOptimization | :x: |  |  | :heavy_check_mark: | :x: | :x: |  |  |  |  |
-| UpwardsFunargProblem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| UpwardsFunargProblem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Non-functional features
 
@@ -52,7 +52,7 @@ a badly implemented counts as 0.5.
 | Python | 4.0 |
 | C++ | 4.0 |
 | Rust | 3.5 |
+| Java | 3.0 |
 | C | 2.0 |
-| Java | 1.0 |
 | Assembler | 0.0 |
 
