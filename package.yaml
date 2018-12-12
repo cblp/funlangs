@@ -1,0 +1,6 @@
+executable:
+  main: funlangs.hs
+
+dependencies:
+  - base
+  - containers

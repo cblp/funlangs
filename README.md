@@ -10,11 +10,20 @@ There are only languages with different functional features.
 
 | Feature | C | C++ | Haskell | Idris | OCaml | Python | Rust |
 |---|---|---|---|---|---|---|---|
+| Closures | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: |
+| DownwardsFunargProblem | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| PolymorphicRecursion |  |  |  | :heavy_check_mark: |  |  |  |
+| PureFunctions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
+| TailCallOptimization |  |  | :heavy_check_mark: | :x: |  |  |  |
+| UpwardsFunargProblem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+## Non-functional features
+
+| Feature | C | C++ | Haskell | Idris | OCaml | Python | Rust |
+|---|---|---|---|---|---|---|---|
 | AdHocPolymorphism | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | AlgebraicDataTypes | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
-| Closures | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: |
 | DependentTypes | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: |
-| DownwardsFunargProblem | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | ForcesImmutability | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | ImmutableData | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Laziness | :x: | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
@@ -23,20 +32,17 @@ There are only languages with different functional features.
 | PatternMatching |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :warning: |
 | PatternMatchingAlternatives |  |  | :heavy_check_mark: | :x: |  |  | :heavy_check_mark: |
 | PatternMatchingVariableIntroduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
-| PolymorphicRecursion |  |  |  | :heavy_check_mark: |  |  |  |
-| PureFunctions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
 | ReferentialTransparency |  |  |  | :heavy_check_mark: |  |  |  |
-| TailCallOptimization |  |  | :heavy_check_mark: | :x: |  |  |  |
-| UpwardsFunargProblem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
 ## Scores
 
 | Language | Score |
 |----------|-------|
-| Idris | 15.0 |
-| Haskell | 14.5 |
-| Rust | 10.0 |
-| OCaml | 9.0 |
-| Python | 8.0 |
-| C++ | 7.0 |
+| Idris | 5.0 |
+| Haskell | 5.0 |
+| Python | 3.0 |
+| OCaml | 3.0 |
+| C++ | 3.0 |
+| Rust | 2.5 |
 | C | 1.0 |
 
