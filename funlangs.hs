@@ -294,8 +294,8 @@ wordsSpace = unwords . splitCamel
 
 splitCamel :: String -> [String]
 splitCamel = snd . foldr go (False, []) where
-    go c (False, rest) = (isUpper c, pushHead c rest)
-    go c (True,  rest) = (isUpper c, [c] : rest)
-    -- go c (nextIsUpper, rest) = (isUpper c, if )
-    pushHead c []     = [[c]]
-    pushHead c (x:xs) = (c:x):xs
+    go c (nextIsUpper, rest) =
+        (isUpper c, if nextIsUpper then [c] : rest else pushHead c rest)
+    pushHead c = \case
+        []   -> [[c]]
+        x:xs -> (c:x):xs
