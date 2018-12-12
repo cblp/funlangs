@@ -13,7 +13,7 @@ There are only languages with different functional features.
 | Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
 | DownwardsFunargProblem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| PolymorphicRecursion | :x: |  |  |  | :heavy_check_mark: |  |  |  |  |  |
+| PolymorphicRecursion | :x: |  |  |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |
 | PureFunctions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
 | TailCallOptimization | :x: |  |  | :heavy_check_mark: | :x: | :x: |  |  |  |  |
 | UpwardsFunargProblem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -47,9 +47,9 @@ a badly implemented counts as 0.5.
 |----------|-------|
 | Idris | 6.0 |
 | Haskell | 6.0 |
+| OCaml | 5.0 |
 | Scala | 4.0 |
 | Python | 4.0 |
-| OCaml | 4.0 |
 | C++ | 4.0 |
 | Rust | 3.5 |
 | C | 2.0 |

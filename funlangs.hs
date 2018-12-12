@@ -114,6 +114,7 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
