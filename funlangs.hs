@@ -14,6 +14,7 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: No
+        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
@@ -33,6 +34,7 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
+        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: Quirks
         , UpwardsFunargProblem                  -: Quirks
         ]
@@ -54,6 +56,7 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
+        , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
@@ -103,6 +106,7 @@ languages =
         [ DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
+        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: No
         , TailCallOptimization                  -: No
         , UpwardsFunargProblem                  -: Yes
@@ -133,6 +137,7 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Quirks
+        , PolymorphicRecursion                  -: Quirks
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
