@@ -91,7 +91,7 @@ languages =
         , LambdaAbstractionSyntax               -: Yes
         , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
-        , TailCallOptimization                  -: No
+        , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
         ]
         [ AdHocPolymorphism                     -: Yes

@@ -16,7 +16,7 @@ There are only languages with different functional features.
 | Lambda Abstraction Syntax | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
 | Polymorphic Recursion | :x: |  |  |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  |
 | Pure Functions | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
-| Tail Call Optimization | :x: |  |  | :heavy_check_mark: | :x: | :x: |  |  |  |  |
+| Tail Call Optimization | :x: |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |
 | Upwards Funarg Problem | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Non-functional features
@@ -46,7 +46,7 @@ a badly implemented counts as 0.5.
 
 | Language | Score |
 |----------|-------|
-| Idris | 7.0 |
+| Idris | 8.0 |
 | Haskell | 7.0 |
 | OCaml | 6.0 |
 | Scala | 5.0 |
