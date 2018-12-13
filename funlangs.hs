@@ -98,7 +98,7 @@ languages =
         , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
-        , PatternMatchingAlternatives           -: No
+        , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
         , ReferentialTransparency               -: Yes

@@ -31,7 +31,7 @@ There are only languages with different functional features.
 | Parametric Modules | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: |  |
 | Parametric Polymorphism |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
 | Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: |  |
-| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :x: |  |  |  | :heavy_check_mark: |  |
+| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: |  |
 | Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
 | Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  |  |
 | Referential Transparency |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |
@@ -48,7 +48,7 @@ Supporting featurues count twice less.
 
 | Language | Score |
 |----------|-------|
-| Idris | 14.5 |
+| Idris | 15.0 |
 | Haskell | 13.25 |
 | Rust | 9.25 |
 | OCaml | 8.5 |
