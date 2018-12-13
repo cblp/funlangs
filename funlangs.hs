@@ -74,6 +74,7 @@ languages =
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
+        , ReferentialTransparency               -: Yes
         , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
