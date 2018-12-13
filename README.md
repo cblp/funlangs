@@ -14,7 +14,6 @@ There are only languages with different functional features.
 | Downwards Funarg Problem | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Lambda Abstraction Syntax | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
-| Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  |  |
 | Pure Functions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
 | Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |
 | Upwards Funarg Problem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -34,6 +33,7 @@ There are only languages with different functional features.
 | Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: |  |
 | Pattern Matching Alternatives |  |  | :heavy_check_mark: | :x: |  |  |  | :heavy_check_mark: |  |
 | Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
+| Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  |  |
 | Referential Transparency |  |  |  | :heavy_check_mark: |  |  |  |  |  |
 | Totality Checking | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
 | Uniqueness Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: |  |
@@ -46,12 +46,12 @@ a hard-to-use one counts as 0.5.
 
 | Language | Score |
 |----------|-------|
-| Idris | 8.0 |
-| Haskell | 8.0 |
-| OCaml | 6.0 |
+| Idris | 7.0 |
+| Haskell | 7.0 |
 | Scala | 5.0 |
-| Python | 5.0 |
+| OCaml | 5.0 |
 | Rust | 4.5 |
+| Python | 4.5 |
 | C++ | 4.5 |
 | Java | 4.0 |
 | C | 2.0 |

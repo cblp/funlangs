@@ -14,7 +14,6 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: No
-        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: No
         ]
@@ -25,6 +24,7 @@ languages =
         , ImmutableData                         -: No
         , Laziness                              -: No
         , ParametricModules                     -: No
+        , PolymorphicRecursion                  -: No
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -34,7 +34,6 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
-        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: Quirks
         , UpwardsFunargProblem                  -: Quirks
         ]
@@ -47,6 +46,7 @@ languages =
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
+        , PolymorphicRecursion                  -: No
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -56,7 +56,6 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
-        , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
@@ -72,6 +71,7 @@ languages =
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , PolymorphicRecursion                  -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -81,7 +81,6 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
-        , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: Yes
         , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
@@ -97,6 +96,7 @@ languages =
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: No
         , PatternMatchingVariableIntroduction   -: Yes
+        , PolymorphicRecursion                  -: Yes
         , ReferentialTransparency               -: Yes
         , TotalityChecking                      -: Yes
         , UniquenessTypes                       -: Yes
@@ -106,18 +106,17 @@ languages =
         [ DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
-        , PolymorphicRecursion                  -: No
         , PureFunctions                         -: No
         , TailCallOptimization                  -: No
         , UpwardsFunargProblem                  -: Yes
         ]
-        []
+        [ PolymorphicRecursion                  -: No
+        ]
     , "OCaml" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
-        , PolymorphicRecursion                  -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -128,6 +127,7 @@ languages =
         , ImmutableData                         -: Yes
         , Laziness                              -: No
         , ParametricPolymorphism                -: Yes
+        , PolymorphicRecursion                  -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -137,7 +137,6 @@ languages =
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Quirks
-        , PolymorphicRecursion                  -: Quirks
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
@@ -151,6 +150,7 @@ languages =
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
         , PatternMatchingVariableIntroduction   -: Yes
+        , PolymorphicRecursion                  -: Quirks
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -191,7 +191,7 @@ languages =
 
 data Desc = Desc
     { functional :: Map FunctionalFeature Value
-    , other      :: Map OtherFeature      Value
+    , supporting :: Map SupportingFeature Value
     }
 
 data FunctionalFeature
@@ -199,13 +199,12 @@ data FunctionalFeature
     | DownwardsFunargProblem
     | Functions
     | LambdaAbstractionSyntax
-    | PolymorphicRecursion
     | PureFunctions
     | TailCallOptimization
     | UpwardsFunargProblem
     deriving (Bounded, Enum, Eq, Ord, Show)
 
-data OtherFeature
+data SupportingFeature
     = AdHocPolymorphism
     | AlgebraicDataTypes
     | DependentTypes
@@ -217,6 +216,7 @@ data OtherFeature
     | PatternMatching
     | PatternMatchingAlternatives
     | PatternMatchingVariableIntroduction
+    | PolymorphicRecursion
     | ReferentialTransparency
     | TotalityChecking
     | UniquenessTypes
@@ -258,7 +258,7 @@ main = putStrLn . unlines
     :   ("|---|" ++ concat (replicate (length languages) "---|"))
     :   [ row
             $   wordsSpace (show feature)
-            :   [ maybe "" show $ other languageFeatures !? feature
+            :   [ maybe "" show $ supporting languageFeatures !? feature
                 | languageFeatures <- elems languages
                 ]
         | feature <- universe
