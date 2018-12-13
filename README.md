@@ -10,7 +10,7 @@ There are only languages with different functional features.
 
 | Feature | Assembler | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Closures | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
+| Closures | :x: | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
 | Downwards Funarg Problem | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Lambda Abstraction Syntax | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
@@ -50,9 +50,9 @@ a badly implemented counts as 0.5.
 | Haskell | 7.0 |
 | OCaml | 6.0 |
 | Scala | 5.0 |
-| C++ | 5.0 |
 | Rust | 4.5 |
 | Python | 4.5 |
+| C++ | 4.5 |
 | Java | 4.0 |
 | C | 2.0 |
 | Assembler | 0.0 |

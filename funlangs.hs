@@ -40,7 +40,7 @@ languages =
         , UniversePolymorphism                  -: No
         ]
     , "C++" -: Desc
-        [ Closures                              -: Yes
+        [ Closures                              -: Quirks
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
         , LambdaAbstractionSyntax               -: Yes
