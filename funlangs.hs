@@ -274,8 +274,10 @@ main = putStrLn . unlines
     :   [ row [language, show (realToFrac score :: Float)]
         | (score, language) <- sortOn Down
             [ (score, language)
-            | (language, Desc{functional}) <- assocs languages
-            , let score = sum $ value <$> functional
+            | (language, Desc{functional, supporting}) <- assocs languages
+            , let
+                score =
+                    sum (value <$> functional) + sum (value <$> supporting) / 2
             ]
         ]
 

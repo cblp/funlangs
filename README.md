@@ -46,13 +46,13 @@ a hard-to-use one counts as 0.5.
 
 | Language | Score |
 |----------|-------|
-| Idris | 7.0 |
-| Haskell | 7.0 |
+| Idris | 14.0 |
+| Haskell | 12.25 |
+| Rust | 8.75 |
+| OCaml | 8.0 |
+| Python | 7.0 |
+| C++ | 6.25 |
 | Scala | 5.0 |
-| OCaml | 5.0 |
-| Rust | 4.5 |
-| Python | 4.5 |
-| C++ | 4.5 |
 | Java | 4.0 |
 | C | 2.0 |
 
