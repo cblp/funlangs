@@ -18,7 +18,7 @@ There are only languages with different functional features.
 | Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |
 | Upwards Funarg Problem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
-## Non-functional features
+## Supporting features
 
 | Feature | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
 |---|---|---|---|---|---|---|---|---|---|
@@ -35,6 +35,7 @@ There are only languages with different functional features.
 | Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
 | Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  |  |
 | Referential Transparency |  |  |  | :heavy_check_mark: |  |  |  |  |  |
+| Static Typing | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | Totality Checking | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
 | Uniqueness Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: |  |
 | Universe Polymorphism | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
@@ -43,16 +44,17 @@ There are only languages with different functional features.
 
 A well implemented feature counts as 1,
 a hard-to-use one counts as 0.5.
+Supporting featurues count twice less.
 
 | Language | Score |
 |----------|-------|
-| Idris | 14.0 |
-| Haskell | 12.25 |
-| Rust | 8.75 |
-| OCaml | 8.0 |
+| Idris | 14.5 |
+| Haskell | 12.75 |
+| Rust | 9.25 |
+| OCaml | 8.5 |
 | Python | 7.0 |
-| C++ | 6.25 |
-| Scala | 5.0 |
-| Java | 4.0 |
-| C | 2.0 |
+| C++ | 6.75 |
+| Scala | 5.5 |
+| Java | 4.5 |
+| C | 2.25 |
 

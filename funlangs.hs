@@ -25,6 +25,7 @@ languages =
         , Laziness                              -: No
         , ParametricModules                     -: No
         , PolymorphicRecursion                  -: No
+        , StaticTyping                          -: Quirks
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -47,6 +48,7 @@ languages =
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
         , PolymorphicRecursion                  -: No
+        , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -72,6 +74,7 @@ languages =
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
+        , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -98,6 +101,7 @@ languages =
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
         , ReferentialTransparency               -: Yes
+        , StaticTyping                          -: Yes
         , TotalityChecking                      -: Yes
         , UniquenessTypes                       -: Yes
         , UniversePolymorphism                  -: Yes
@@ -111,6 +115,7 @@ languages =
         , UpwardsFunargProblem                  -: Yes
         ]
         [ PolymorphicRecursion                  -: No
+        , StaticTyping                          -: Yes
         ]
     , "OCaml" -: Desc
         [ Closures                              -: Yes
@@ -128,6 +133,7 @@ languages =
         , Laziness                              -: No
         , ParametricPolymorphism                -: Yes
         , PolymorphicRecursion                  -: Yes
+        , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -151,6 +157,7 @@ languages =
         , PatternMatching                       -: Quirks
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Quirks
+        , StaticTyping                          -: No
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
@@ -174,6 +181,7 @@ languages =
         , PatternMatching                       -: Quirks
         , PatternMatchingAlternatives           -: Yes
         , PatternMatchingVariableIntroduction   -: Yes
+        , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: Yes
         , UniversePolymorphism                  -: No
@@ -186,7 +194,8 @@ languages =
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
-        []
+        [ StaticTyping                          -: Yes
+        ]
     ]
 
 data Desc = Desc
@@ -218,6 +227,7 @@ data SupportingFeature
     | PatternMatchingVariableIntroduction
     | PolymorphicRecursion
     | ReferentialTransparency
+    | StaticTyping
     | TotalityChecking
     | UniquenessTypes
     | UniversePolymorphism
@@ -252,7 +262,7 @@ main = putStrLn . unlines
         | feature <- universe
         ]
     ++  ""
-    :   "## Non-functional features"
+    :   "## Supporting features"
     :   ""
     :   row ("Feature" : keys languages)
     :   ("|---|" ++ concat (replicate (length languages) "---|"))
@@ -268,6 +278,7 @@ main = putStrLn . unlines
     :   ""
     :   "A well implemented feature counts as 1,"
     :   "a hard-to-use one counts as 0.5."
+    :   "Supporting featurues count twice less."
     :   ""
     :   "| Language | Score |"
     :   "|----------|-------|"
