@@ -190,8 +190,8 @@ languages =
     ]
 
 data Desc = Desc
-    { functional    :: Map FunctionalFeature    Value
-    , nonFunctional :: Map NonFunctionalFeature Value
+    { functional :: Map FunctionalFeature Value
+    , other      :: Map OtherFeature      Value
     }
 
 data FunctionalFeature
@@ -205,7 +205,7 @@ data FunctionalFeature
     | UpwardsFunargProblem
     deriving (Bounded, Enum, Eq, Ord, Show)
 
-data NonFunctionalFeature
+data OtherFeature
     = AdHocPolymorphism
     | AlgebraicDataTypes
     | DependentTypes
@@ -258,7 +258,7 @@ main = putStrLn . unlines
     :   ("|---|" ++ concat (replicate (length languages) "---|"))
     :   [ row
             $   wordsSpace (show feature)
-            :   [ maybe "" show $ nonFunctional languageFeatures !? feature
+            :   [ maybe "" show $ other languageFeatures !? feature
                 | languageFeatures <- elems languages
                 ]
         | feature <- universe
