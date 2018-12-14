@@ -191,11 +191,28 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , GuaranteedTailCallOptimization        -: Quirks
         , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
-        [ StaticTyping                          -: Yes
+        [ AdHocPolymorphism                     -: Yes
+        , AlgebraicDataTypes                    -: Yes
+        , DependentTypes                        -: No
+        , ForcesImmutability                    -: Quirks
+        , ImmutableData                         -: Yes
+        , Laziness                              -: No
+        , ParametricModules                     -: Yes
+        , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , PatternMatchingAlternatives           -: Yes
+        , PatternMatchingVariableIntroduction   -: Yes
+        , PolymorphicRecursion                  -: Yes
+        , ReferentialTransparency               -: No
+        , StaticTyping                          -: Yes
+        , TotalityChecking                      -: No
+        , UniquenessTypes                       -: No
+        , UniversePolymorphism                  -: No
         ]
     ]
 
