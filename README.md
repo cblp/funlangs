@@ -15,30 +15,30 @@ There are only languages with different functional features.
 | Functions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Lambda Abstraction Syntax | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
 | Pure Functions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
-| Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  |  |
+| Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  | :warning: |
 | Upwards Funarg Problem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Supporting features
 
 | Feature | C | C++ | Haskell | Idris | Java | OCaml | Python | Rust | Scala |
 |---|---|---|---|---|---|---|---|---|---|
-| Ad Hoc Polymorphism | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Algebraic Data Types | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
-| Dependent Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
-| Forces Immutability | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
-| Immutable Data | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Laziness | :x: | :x: | :heavy_check_mark: | :x: |  | :x: | :x: | :x: |  |
-| Parametric Modules | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: |  |
-| Parametric Polymorphism |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: |  |
-| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: |  |
-| Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |
-| Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  |  |
-| Referential Transparency |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |
+| Ad Hoc Polymorphism | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Algebraic Data Types | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| Dependent Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: | :x: |
+| Forces Immutability | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: |  :warning: |
+| Immutable Data | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Laziness | :x: | :x: | :heavy_check_mark: | :x: |  | :x: | :x: | :x: |  :x:  |
+| Parametric Modules | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: | :heavy_check_mark: |
+| Parametric Polymorphism |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: | :heavy_check_mark: |
+| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: | :heavy_check_mark: |
+| Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  | :heavy_check_mark: |
+| Referential Transparency |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  | :x: |
 | Static Typing | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
-| Totality Checking | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
-| Uniqueness Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: |  |
-| Universe Polymorphism | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: |  |
+| Totality Checking | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: | :x: |
+| Uniqueness Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: | :x: |
+| Universe Polymorphism | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: | :x: |
 
 ## Scores
 
@@ -50,11 +50,11 @@ Supporting featurues count twice less.
 |----------|-------|
 | Idris | 15.0 |
 | Haskell | 13.25 |
+| Scala | 10.75 |
 | Rust | 9.25 |
 | OCaml | 8.5 |
 | Python | 7.0 |
 | C++ | 6.75 |
-| Scala | 5.5 |
 | Java | 4.5 |
 | C | 2.25 |
 
