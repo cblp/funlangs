@@ -22,7 +22,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: No
         , ImmutableData                         -: No
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: No
         , PolymorphicRecursion                  -: No
         , StaticTyping                          -: Quirks
@@ -43,7 +43,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: No
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
@@ -67,7 +67,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
-        , Laziness                              -: Yes
+        , LazinessByDefault                     -: Yes
         , ParametricModules                     -: Quirks
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
@@ -94,7 +94,7 @@ languages =
         , DependentTypes                        -: Yes
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
@@ -133,7 +133,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
@@ -157,7 +157,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: No
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
@@ -181,7 +181,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: No
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
@@ -206,7 +206,7 @@ languages =
         , DependentTypes                        -: No
         , ForcesImmutability                    -: Quirks
         , ImmutableData                         -: Yes
-        , Laziness                              -: No
+        , LazinessByDefault                     -: No
         , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Yes
@@ -242,7 +242,7 @@ data SupportingFeature
     | DependentTypes
     | ForcesImmutability
     | ImmutableData
-    | Laziness
+    | LazinessByDefault
     | ParametricModules
     | ParametricPolymorphism
     | PatternMatching
