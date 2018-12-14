@@ -13,7 +13,7 @@ There are only languages with different functional features.
 | Closures | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: |
 | Downwards Funarg Problem | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Functions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Guaranteed Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: |  |  |  | :warning: |
+| Guaranteed Tail Call Optimization |  |  | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |  |  | :warning: |
 | Lambda Abstraction Syntax | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :warning: | :heavy_check_mark: | :heavy_check_mark: |
 | Pure Functions | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: |
 | Upwards Funarg Problem | :x: | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -28,10 +28,10 @@ There are only languages with different functional features.
 | Forces Immutability | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |
 | Immutable Data | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Laziness | :x: | :x: | :heavy_check_mark: | :x: |  | :x: | :x: | :x: | :x: |
-| Parametric Modules | :x: | :x: | :warning: | :heavy_check_mark: |  |  | :x: | :x: | :heavy_check_mark: |
-| Parametric Polymorphism |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  |  | :warning: | :warning: | :heavy_check_mark: |
-| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  | :heavy_check_mark: | :heavy_check_mark: |
+| Parametric Modules | :x: | :x: | :warning: | :heavy_check_mark: |  | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: |
+| Parametric Polymorphism |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Pattern Matching |  | :warning: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | :warning: | :warning: | :heavy_check_mark: |
+| Pattern Matching Alternatives |  |  | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: | :heavy_check_mark: |
 | Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  | :heavy_check_mark: |
 | Referential Transparency |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  | :x: |
@@ -50,11 +50,11 @@ Supporting featurues count twice less.
 |----------|-------|
 | Idris | 15.0 |
 | Haskell | 13.25 |
+| OCaml | 11.0 |
 | Scala | 10.75 |
 | Rust | 9.25 |
-| OCaml | 8.5 |
 | Python | 7.0 |
 | C++ | 6.75 |
-| Java | 4.5 |
+| Java | 5.0 |
 | C | 2.25 |
 

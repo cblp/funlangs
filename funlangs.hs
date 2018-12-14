@@ -115,13 +115,15 @@ languages =
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
         ]
-        [ PolymorphicRecursion                  -: No
+        [ ParametricPolymorphism                -: Yes
+        , PolymorphicRecursion                  -: No
         , StaticTyping                          -: Yes
         ]
     , "OCaml" -: Desc
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , GuaranteedTailCallOptimization        -: Yes
         , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
         , UpwardsFunargProblem                  -: Yes
@@ -132,7 +134,10 @@ languages =
         , ForcesImmutability                    -: Yes
         , ImmutableData                         -: Yes
         , Laziness                              -: No
+        , ParametricModules                     -: Yes
         , ParametricPolymorphism                -: Yes
+        , PatternMatching                       -: Yes
+        , PatternMatchingAlternatives           -: Yes
         , PolymorphicRecursion                  -: Yes
         , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
