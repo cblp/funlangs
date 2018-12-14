@@ -57,9 +57,9 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , GuaranteedTailCallOptimization        -: Yes
         , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: Yes
-        , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
         ]
         [ AdHocPolymorphism                     -: Yes
@@ -84,9 +84,9 @@ languages =
         [ Closures                              -: Yes
         , DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , GuaranteedTailCallOptimization        -: Yes
         , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: Yes
-        , TailCallOptimization                  -: Yes
         , UpwardsFunargProblem                  -: Yes
         ]
         [ AdHocPolymorphism                     -: Yes
@@ -110,9 +110,9 @@ languages =
     , "Java" -: Desc
         [ DownwardsFunargProblem                -: Yes
         , Functions                             -: Yes
+        , GuaranteedTailCallOptimization        -: No
         , LambdaAbstractionSyntax               -: Yes
         , PureFunctions                         -: No
-        , TailCallOptimization                  -: No
         , UpwardsFunargProblem                  -: Yes
         ]
         [ PolymorphicRecursion                  -: No
@@ -208,9 +208,9 @@ data FunctionalFeature
     = Closures
     | DownwardsFunargProblem
     | Functions
+    | GuaranteedTailCallOptimization
     | LambdaAbstractionSyntax
     | PureFunctions
-    | TailCallOptimization
     | UpwardsFunargProblem
     deriving (Bounded, Enum, Eq, Ord, Show)
 
