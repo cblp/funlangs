@@ -25,6 +25,7 @@ languages =
         , LazinessByDefault                     -: No
         , ParametricModules                     -: No
         , PolymorphicRecursion                  -: No
+        , RowPolymorphism                       -: No
         , StaticTyping                          -: Quirks
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
@@ -48,6 +49,7 @@ languages =
         , ParametricPolymorphism                -: Yes
         , PatternMatching                       -: Quirks
         , PolymorphicRecursion                  -: No
+        , RowPolymorphism                       -: No
         , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
@@ -75,6 +77,7 @@ languages =
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Yes
         , ReferentialTransparency               -: Yes
+        , RowPolymorphism                       -: Quirks
         , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
@@ -117,6 +120,7 @@ languages =
         ]
         [ ParametricPolymorphism                -: Yes
         , PolymorphicRecursion                  -: No
+        , RowPolymorphism                       -: No
         , StaticTyping                          -: Yes
         ]
     , "OCaml" -: Desc
@@ -139,6 +143,7 @@ languages =
         , PatternMatching                       -: Yes
         , PatternMatchingAlternatives           -: Yes
         , PolymorphicRecursion                  -: Yes
+        , RowPolymorphism                       -: Yes
         , StaticTyping                          -: Yes
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No
@@ -163,6 +168,7 @@ languages =
         , PatternMatching                       -: Quirks
         , PatternMatchingVariableIntroduction   -: Yes
         , PolymorphicRecursion                  -: Quirks
+        , RowPolymorphism                       -: No
         , StaticTyping                          -: No
         , TotalityChecking                      -: No
         , UniquenessTypes                       -: No

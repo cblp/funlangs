@@ -35,7 +35,7 @@ There are only languages with different functional features.
 | Pattern Matching Variable Introduction |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Polymorphic Recursion | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :warning: |  | :heavy_check_mark: |
 | Referential Transparency |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  | :x: |
-| Row Polymorphism |  |  |  |  |  |  |  |  |  |
+| Row Polymorphism | :x: | :x: | :warning: |  | :x: | :heavy_check_mark: | :x: |  |  |
 | Static Typing | :warning: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | Totality Checking | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :x: | :x: |
 | Uniqueness Types | :x: | :x: | :x: | :heavy_check_mark: |  | :x: | :x: | :heavy_check_mark: | :x: |
@@ -50,8 +50,8 @@ Supporting featurues count twice less.
 | Language | Score |
 |----------|-------|
 | Idris | 15.0 |
-| Haskell | 13.25 |
-| OCaml | 11.0 |
+| Haskell | 13.5 |
+| OCaml | 11.5 |
 | Scala | 10.75 |
 | Rust | 9.25 |
 | Python | 7.0 |
