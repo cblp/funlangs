@@ -250,6 +250,7 @@ data SupportingFeature
     | PatternMatchingVariableIntroduction
     | PolymorphicRecursion
     | ReferentialTransparency
+    | RowPolymorphism
     | StaticTyping
     | TotalityChecking
     | UniquenessTypes
