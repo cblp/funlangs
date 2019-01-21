@@ -4,7 +4,11 @@
 # Functional languages
 
 There is no such thing as a functional language.
-There are only languages with different functional features.
+
+[You can](https://lispcast.com/fp-in-my-language) write functionally
+in any language.
+
+Also, different languages have different functional features.
 
 ## Functional features
 
