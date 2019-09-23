@@ -225,6 +225,21 @@ languages =
         , UniquenessTypes                       -: No
         , UniversePolymorphism                  -: No
         ]
+    , "Delphi" -: Desc
+        [ Closures                              -: Yes
+        , Functions                             -: Yes
+        ]
+        [ AdHocPolymorphism                     -: Yes
+        , ImmutableData                         -: Yes
+        , PatternMatchingAlternatives           -: Yes
+        , StaticTyping                          -: Yes
+        ]
+    , "F#" -: Desc
+        [ Closures                              -: Yes
+        , Functions                             -: Yes
+        ]
+        [ ImmutableData                         -: Yes
+        ]
     ]
 
 data Desc = Desc
